@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:INA138_sen-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -19,7 +20,7 @@ U 1 1 5BBACD21
 P 5000 2500
 F 0 "U1" V 4954 2159 50  0000 R CNN
 F 1 "INA138" V 5045 2159 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-5" H 5000 2500 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5000 2500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 5000 2505 50  0001 C CNN
 	1    5000 2500
 	0    -1   1    0   
@@ -310,11 +311,6 @@ Wire Wire Line
 	5450 2850 5450 3000
 Wire Wire Line
 	5450 3000 5350 3000
-Wire Wire Line
-	5300 2400 5450 2400
-Wire Wire Line
-	5450 2400 5450 2850
-Connection ~ 5450 2850
 $Comp
 L power:GND #PWR08
 U 1 1 5BBB34F5
@@ -326,7 +322,6 @@ F 3 "" H 5450 3150 50  0001 C CNN
 	1    5450 3150
 	1    0    0    -1  
 $EndComp
-Connection ~ 5450 3000
 $Comp
 L power:GND #PWR02
 U 1 1 5BBB40F9
@@ -342,8 +337,6 @@ Wire Wire Line
 	3750 2500 3800 2500
 Wire Wire Line
 	3800 2500 3800 2550
-Wire Wire Line
-	5450 3000 5450 3350
 $Comp
 L power:VCC #PWR01
 U 1 1 5BBB4D6D
@@ -448,4 +441,12 @@ Wire Wire Line
 Wire Wire Line
 	5500 1150 5200 1150
 Connection ~ 5200 1150
+Wire Wire Line
+	5300 2400 5450 2400
+Wire Wire Line
+	5450 2400 5450 2850
+Connection ~ 5450 2850
+Wire Wire Line
+	5450 3000 5450 3150
+Connection ~ 5450 3000
 $EndSCHEMATC
